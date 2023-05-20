@@ -1,0 +1,238 @@
+header {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  margin-left: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  background-color: #333; /* Color de fondo del footer */
+  position: fixed; /* Fija el footer en la parte inferior de la pantalla */
+  bottom: 0; /* Alinea el footer en la parte inferior */
+  width: 100%; /* Ancho del footer */
+  padding: 5px; /* Espacio interno del footer */
+  text-align: center; /* Alineación del contenido del footer */
+  color: #fff; /* Color del texto del footer */
+}
+
+body {
+  /*Margen 0 (Sin esto, aparece una linea blanca al lado izquierdo*/
+  margin: 0;
+  background-image: linear-gradient(to bottom, #0e5ef3, #34b4f0);
+  
+}
+
+nav {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  margin-left: 0;
+}
+  
+  nav img {
+    margin-right: 10px;
+    vertical-align: middle; /* Alinea verticalmente la imagen */
+    width: 199px; /* Ancho deseado de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+
+  nav ul {
+    list-style-type: none; /* Elimina los puntos de lista predeterminados */
+    margin: 0; /*Margenes o espacios entre elementos*/
+    padding: 10px; /*Espacio interno de un elemento*/
+    float: right;
+    overflow: hidden;
+  }
+  
+  nav ul li {
+    display: inline-block; /* Muestra los elementos de navegación en línea */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  nav ul li a {
+    display: block; /* Convierte los enlaces en elementos de bloque */
+    padding: 10px 20px; /* Ajusta el espaciado interno de los enlaces */
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+    font-weight: bold; /*texto en negrilla*/
+  }
+  
+  nav ul li a:hover {
+    background-color: #555; /* Color de fondo al pasar el cursor sobre los enlaces */
+  }
+
+
+  .banner {
+    background: url(img/banner/Ban4.png);
+    width: 100%;
+    min-height: 100vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(218, 172, 22);
+  }
+
+  
+
+.banner-title{
+    font-size: 36px;
+    color: rgb(218, 172, 22);
+}
+
+.banner-content{
+    max-width: 768px;
+    text-align: center;
+    z-index: 1;
+}
+
+.highlight {
+    color: rgb(218, 172, 22);
+    text-shadow: 0 0 5px blue; /*Texto Resaltado*/
+  }
+
+
+.text-button {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: none;
+    color: rgb(218, 172, 22);
+    text-shadow: 0 0 5px blue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*----------------------------------------------------------------------------------*/
+
+
+/*Codigo para hacer la lista de 4 elementos horizontales */
+
+
+/* Contenedor principal */
+.container {
+  /* Contenedor principal */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal-list {
+  /* Lista horizontal */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.horizontal-list li {
+  /* Elemento de la lista */
+  margin: 10px;
+}
+
+.card {
+  /* Tarjeta */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 250px;
+  background: linear-gradient(#F9BC61, #FDE8C9);
+  box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+  
+/* Código tomado de la página mostrada en el workbook*/
+
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 250px;
+  background: linear-gradient(#F9BC61, #FDE8C9);
+  box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 88%;
+  width: 88%;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.content > .top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 20%;
+  background-color: white;
+}
+.content > .top p {
+  font-weight: bold;
+  font-size: 12px;
+}
+.content > .top .color {
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.content > .middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  background: linear-gradient(#F9BC61, #FDE8C9 75%);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.content > .middle img {
+  width: 60%;
+}
+.content > .middle div > p:first-child {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.content > .middle div > p:last-child {
+  margin: 0;
+  font-weight: bold;
+}
+
+.content > .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.content > .bottom div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content > .bottom div p:first-child {
+  font-weight: bold;
+}
